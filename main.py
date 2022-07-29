@@ -17,6 +17,7 @@ def visualise_detection(ecg, markers, sampling_rate = 500, start_sec=0, stop_sec
     plt.xlabel('Time (s)', fontsize=fontsize)
     plt.ylabel('Amplitude', fontsize=fontsize)
     plt.xticks(fontsize=fontsize); plt.yticks(fontsize=fontsize)
+    plt.tight_layout()
     plt.savefig('example/delineation.png')
 
 def convert_from_samples_to_sec(nb_samples, sampling_rate, milli=False):
